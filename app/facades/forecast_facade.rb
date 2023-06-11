@@ -1,7 +1,9 @@
 class ForecastFacade
-  def fetch_forecast(location)
-    coordinates = coord_facade.fetch_coordinates(location)
-    forecast_data = service.get_forecast(coordinates.lat, coordinates.lng)
+  def initialize(location)
+    @location = location
+  end
+
+  def forecast
     Forecast.new(forecast_data)
   end
 
@@ -13,5 +15,13 @@ class ForecastFacade
 
   def coord_facade
     _coord_facade ||= CoordinatesFacade.new
+  end
+
+  def coordinates
+    _coordinates ||= coord_facade.fetch_coordinates(@location)
+  end
+
+  def forecast_data
+    _forecast_data ||= service.get_forecast(coordinates.lat, coordinates.lng)
   end
 end
