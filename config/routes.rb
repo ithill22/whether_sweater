@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :forecast, only: [:index]
       resources :users, only: [:create]
       resources :sessions, only: [:create]
-      resources :book_search, only: [:index]
+      get 'book-search', to: 'book_search#index', as: 'book_search'
     end
   end
 end
