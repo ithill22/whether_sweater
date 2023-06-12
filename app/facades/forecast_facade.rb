@@ -1,4 +1,6 @@
 class ForecastFacade
+  class CoordinatesError < StandardError; end
+
   def initialize(location)
     @location = location
   end
@@ -8,7 +10,7 @@ class ForecastFacade
   end
 
   def coordinates
-    raise LocationError, coordinates_data[:info][:messages][0] if coordinates_data[:info][:statuscode] == 400
+    raise CoordinatesError, coordinates_data[:info][:messages][0] if coordinates_data[:info][:statuscode] == 400
 
     _coordinates ||= Coordinates.new(coordinates_data)
   end

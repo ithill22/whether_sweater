@@ -1,5 +1,5 @@
 class Api::V1::ForecastController < ApplicationController
-  rescue_from ForecastFacade::LocationError, with: :invalid_request
+  rescue_from ForecastFacade::CoordinatesError, with: :invalid_request
 
   def index
     forecast = ForecastFacade.new(params[:location]).forecast
@@ -9,6 +9,6 @@ class Api::V1::ForecastController < ApplicationController
   private
 
   def invalid_request(exception)
-    render json: {errors: exception.message}, status: :bad_request
+    render json: {errors: { detail: exception.message } }, status: :bad_request
   end
 end

@@ -86,8 +86,22 @@ RSpec.describe 'Forecast API' do
         expect(json[:data][:attributes][:hourly].first).to have_key(:conditions)
         expect(json[:data][:attributes][:hourly].first[:conditions]).to be_a(String)
         
-        ecpect(json[:data][:attributes][:hourly].first).to have_key(:icon)
+        expect(json[:data][:attributes][:hourly].first).to have_key(:icon)
         expect(json[:data][:attributes][:hourly].first[:icon]).to be_a(String)
+      end
+    end
+
+    describe 'sad path' do
+      it 'returns an error if location is not found', :vcr do
+        get '/api/v1/forecast?location=', headers: { 'Content-Type' => 'application/json', 'Accept' => 'application/json' }
+
+        expect(response).to_not be_successful
+        expect(response.status).to eq(400)
+
+        json = JSON.parse(response.body, symbolize_names: true)
+
+        expect(json).to be_a(Hash)
+        expect(json[:errors][:detail]).to eq('Illegal argument from request: Insufficient info for location')
       end
     end
   end
