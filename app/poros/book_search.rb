@@ -1,5 +1,5 @@
 class BookSearch
-  attr_reader :id, :type, :destination, :forecast, :total_books_found, :books
+  attr_reader :id, :destination, :forecast, :total_books_found, :books
 
   def initialize(location, quantity, book_data, forecast_data)
     @id = nil
