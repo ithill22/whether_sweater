@@ -1,7 +1,8 @@
 class Forecast
-  attr_reader :current, :daily, :hourly
+  attr_reader :id, :current, :daily, :hourly
 
   def initialize(forecast_data)
+    @id = nil
     @data = forecast_data
     @current = current
     @daily = daily
