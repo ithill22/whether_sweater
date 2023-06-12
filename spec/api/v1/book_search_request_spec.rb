@@ -42,13 +42,13 @@ RSpec.describe 'Book Search API' do
         expect(json[:data][:attributes][:books]).to be_a(Array)
 
         expect(json[:data][:attributes][:books].first).to have_key(:isbn)
-        expect(json[:data][:attributes][:books].first[:isbn]).to be_a(String)
+        expect(json[:data][:attributes][:books].first[:isbn]).to be_a(Array)
 
         expect(json[:data][:attributes][:books].first).to have_key(:title)
         expect(json[:data][:attributes][:books].first[:title]).to be_a(String)
 
         expect(json[:data][:attributes][:books].first).to have_key(:publisher)
-        expect(json[:data][:attributes][:books].first[:publisher]).to be_a(String)
+        expect(json[:data][:attributes][:books].first[:publisher]).to be_a(Array)
 
         expect(json[:data][:attributes][:books].count).to eq(5)
       end

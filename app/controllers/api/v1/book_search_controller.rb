@@ -1,6 +1,6 @@
 class Api::V1::BookSearchController < ApplicationController
   def index
-    book = BookFacade.new(params[:title]).book
-    render json: BookSerializer.new(book)
+    books = BookSearchFacade.new(params[:location], params[:quantity]).books
+    render json: BookSearchSerializer.new(books)
   end
 end

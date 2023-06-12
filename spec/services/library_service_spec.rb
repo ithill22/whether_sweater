@@ -5,7 +5,7 @@ RSpec.describe LibraryService do
     describe '#get_books' do
       it 'returns books for a search term', :vcr do
         service = LibraryService.new
-        response = service.get_books('denver,co')
+        response = service.get_books('denver,co', '5')
 
         expect(response).to be_a Hash
 
