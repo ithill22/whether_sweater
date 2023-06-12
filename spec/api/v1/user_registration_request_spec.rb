@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User Registration Request' do
+RSpec.describe 'User Registration API' do
   describe 'Create User' do
     describe 'happy path' do
       it 'creates a user and returns an api key', :vcr do
