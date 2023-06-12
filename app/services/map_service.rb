@@ -1,12 +1,16 @@
 class MapService
   def get_coordinates(location)
-    get_url("address?location=#{location}")
+    get_url("geocoding/v1/address?location=#{location}")
+  end
+
+  def get_directions(origin, destination)
+    get_url("directions/v2/route?from=#{origin}&to=#{destination}")
   end
 
   private
 
   def conn
-    Faraday.new(url: 'http://www.mapquestapi.com/geocoding/v1/') do |f|
+    Faraday.new(url: 'http://www.mapquestapi.com/') do |f|
       f.params['key'] = ENV['MAP_API_KEY']
     end
   end
