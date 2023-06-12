@@ -7,18 +7,24 @@ class ForecastFacade
     Forecast.new(forecast_data)
   end
 
+  def coordinates
+    raise LocationError, coordinates_data[:info][:messages][0] if coordinates_data[:info][:statuscode] == 400
+
+    _coordinates ||= Coordinates.new(coordinates_data)
+  end
+
   private
 
   def service
     _service ||= WeatherService.new
   end
 
-  def coord_facade
-    _coord_facade ||= CoordinatesFacade.new
+  def map_service
+    _map_service ||= MapService.new
   end
 
-  def coordinates
-    _coordinates ||= coord_facade.fetch_coordinates(@location)
+  def coordinates_data
+    _coordinates_data ||= map_service.get_coordinates(@location)
   end
 
   def forecast_data

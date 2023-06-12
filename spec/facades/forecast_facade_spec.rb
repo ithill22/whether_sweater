@@ -12,5 +12,15 @@ RSpec.describe 'Forecast Facade' do
         expect(forecast.hourly).to be_a(Array)
       end
     end
+
+    describe '#coordinates' do
+      it 'returns a coordinates object', :vcr do
+        coordinates = ForecastFacade.new('denver,co').coordinates
+
+        expect(coordinates).to be_a(Coordinates)
+        expect(coordinates.lat).to be_a(Float)
+        expect(coordinates.lng).to be_a(Float)
+      end
+    end
   end
 end
