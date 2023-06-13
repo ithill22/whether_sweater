@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=tilKk9KQvQUhQZ9PWoq4hBYfkaE8R9g8U2z9yVs-0GA&per_page=1&query=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3622'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - max-age=86400,stale-if-error=3600,stale-while-revalidate=60
+      X-Unsplash-Version:
+      - v1
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=tilKk9KQvQUhQZ9PWoq4hBYfkaE8R9g8U2z9yVs-0GA&page=7200&per_page=1&query=denver%2Cco>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=tilKk9KQvQUhQZ9PWoq4hBYfkaE8R9g8U2z9yVs-0GA&page=2&per_page=1&query=denver%2Cco>;
+        rel="next"
+      X-Total:
+      - '7200'
+      X-Per-Page:
+      - '1'
+      X-Powered-By:
+      - hero-app
+      Content-Language:
+      - en
+      Etag:
+      - W/"a08d1721f225a1739a84b6bf82147f70"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Request-Id:
+      - a83f60bd-b8fe-48e3-9967-359ba450c33b
+      X-Runtime:
+      - '0.094398'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 13 Jun 2023 22:20:18 GMT
+      Age:
+      - '1130'
+      X-Served-By:
+      - cache-iad-kiad7000144-IAD, cache-den8220-DEN
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1686694818.403684,VS0,VE14
+      Vary:
+      - Accept-Encoding,Authorization,Accept-Language,client-geo-region,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":7200,"total_pages":7200,"results":[{"id":"Wv9Azo02LAE","slug":"Wv9Azo02LAE","created_at":"2023-02-25T07:53:27Z","updated_at":"2023-06-13T04:36:04Z","promoted_at":null,"width":2008,"height":3008,"color":"#262626","blur_hash":"LIC6$9%2MwNH9GRjt6t74mj[f,og","description":"Sloan''s
+        Lake Park, Denver, CO","alt_description":"a path through a snow covered park
+        with trees","urls":{"raw":"https://images.unsplash.com/photo-1677311275621-b3f6c1e8647b?ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA\u0026ixlib=rb-4.0.3","full":"https://images.unsplash.com/photo-1677311275621-b3f6c1e8647b?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA\u0026ixlib=rb-4.0.3\u0026q=85","regular":"https://images.unsplash.com/photo-1677311275621-b3f6c1e8647b?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA\u0026ixlib=rb-4.0.3\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1677311275621-b3f6c1e8647b?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA\u0026ixlib=rb-4.0.3\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1677311275621-b3f6c1e8647b?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA\u0026ixlib=rb-4.0.3\u0026q=80\u0026w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1677311275621-b3f6c1e8647b"},"links":{"self":"https://api.unsplash.com/photos/Wv9Azo02LAE","html":"https://unsplash.com/photos/Wv9Azo02LAE","download":"https://unsplash.com/photos/Wv9Azo02LAE/download?ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA","download_location":"https://api.unsplash.com/photos/Wv9Azo02LAE/download?ixid=M3w0NjEzMzJ8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2ODY2OTM2ODh8MA"},"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"4NImDQ0cXNk","updated_at":"2023-06-13T05:49:27Z","username":"gennady107","name":"Gennady
+        Zakharin","first_name":"Gennady","last_name":"Zakharin","twitter_username":null,"portfolio_url":null,"bio":null,"location":"Denver,
+        Colorado, USA","links":{"self":"https://api.unsplash.com/users/gennady107","html":"https://unsplash.com/@gennady107","photos":"https://api.unsplash.com/users/gennady107/photos","likes":"https://api.unsplash.com/users/gennady107/likes","portfolio":"https://api.unsplash.com/users/gennady107/portfolio","following":"https://api.unsplash.com/users/gennady107/following","followers":"https://api.unsplash.com/users/gennady107/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-fb-1668926194-2a1d353dcda1.jpg?ixlib=rb-4.0.3\u0026crop=faces\u0026fit=crop\u0026w=32\u0026h=32","medium":"https://images.unsplash.com/profile-fb-1668926194-2a1d353dcda1.jpg?ixlib=rb-4.0.3\u0026crop=faces\u0026fit=crop\u0026w=64\u0026h=64","large":"https://images.unsplash.com/profile-fb-1668926194-2a1d353dcda1.jpg?ixlib=rb-4.0.3\u0026crop=faces\u0026fit=crop\u0026w=128\u0026h=128"},"instagram_username":"Gennady107","total_collections":0,"total_likes":71,"total_photos":1409,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":"Gennady107","portfolio_url":null,"twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"usa"},{"type":"search","title":"co"},{"type":"search","title":"denver"}]}]}'
+  recorded_at: Tue, 13 Jun 2023 22:20:18 GMT
+recorded_with: VCR 6.1.0
