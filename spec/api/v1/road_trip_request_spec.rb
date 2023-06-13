@@ -21,7 +21,7 @@ RSpec.describe 'Road Trip API' do
         expect(json[:data]).to be_a(Hash)
         
         expect(json[:data]).to have_key(:id)
-        expect(json[:data][:id]).to be_a(String)
+        expect(json[:data][:id]).to eq(nil)
 
         expect(json[:data]).to have_key(:type)
         expect(json[:data][:type]).to be_a(String)
@@ -62,13 +62,33 @@ RSpec.describe 'Road Trip API' do
                                     api_key: "123456789"
                                   })
 
-        expect(response).to_not be_successful
+        expect(response).to have_http_status(:unauthorized)
         expect(response.status).to eq(401)
 
         json = JSON.parse(response.body, symbolize_names: true)
 
         expect(json).to be_a(Hash)
-        expect(json[:errors][detail]).to eq("Invalid API key")
+        expect(json[:errors][:detail]).to eq("Invalid API Key")
+      end
+
+      it "if a route does not exist, it returns 'impossible' and no weather", :vcr do
+        user = User.create!(email: "test@test.com", password: "password", password_confirmation: "password")
+        post '/api/v1/road_trip', headers: { 'Content-Type' => 'application/json', 'Accept' => 'application/json' },
+                                  params: JSON.generate({
+                                    origin: "Denver,CO",
+                                    destination: "London,UK",
+                                    api_key: user.api_key
+                                  })
+
+        expect(response).to be_successful
+        expect(response.status).to eq(200)
+
+        json = JSON.parse(response.body, symbolize_names: true)
+
+        expect(json).to be_a(Hash)
+        expect(json[:data]).to be_a(Hash)
+        expect(json[:data][:attributes][:travel_time]).to eq("impossible")
+        expect(json[:data][:attributes][:weather_at_eta]).to eq({})
       end
     end
   end
