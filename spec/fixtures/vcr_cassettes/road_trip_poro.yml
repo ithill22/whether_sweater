@@ -2,354 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openlibrary.org/search.json?limit=5&q=denver,co
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.6
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx/1.18.0 (Ubuntu)
-      Date:
-      - Tue, 13 Jun 2023 21:27:39 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Method:
-      - GET, OPTIONS
-      Access-Control-Max-Age:
-      - '86400'
-      X-Ol-Stats:
-      - '"SR 1 0.068 TT 0 0.069"'
-      Referrer-Policy:
-      - no-referrer-when-downgrade
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-            "numFound": 758,
-            "start": 0,
-            "numFoundExact": true,
-            "docs": [
-                {
-                    "key": "/works/OL8503198W",
-                    "type": "work",
-                    "seed": [
-                        "/books/OL10909613M",
-                        "/works/OL8503198W",
-                        "/authors/OL2843451A"
-                    ],
-                    "title": "Denver, Co",
-                    "title_suggest": "Denver, Co",
-                    "title_sort": "Denver, Co",
-                    "edition_count": 1,
-                    "edition_key": [
-                        "OL10909613M"
-                    ],
-                    "publish_date": [
-                        "January 2001"
-                    ],
-                    "publish_year": [
-                        2001
-                    ],
-                    "first_publish_year": 2001,
-                    "isbn": [
-                        "0762507845",
-                        "9780762507849"
-                    ],
-                    "last_modified_i": 1338943517,
-                    "ebook_count_i": 0,
-                    "ebook_access": "no_ebook",
-                    "has_fulltext": false,
-                    "public_scan_b": false,
-                    "publisher": [
-                        "Universal Map Enterprises"
-                    ],
-                    "language": [
-                        "eng"
-                    ],
-                    "author_key": [
-                        "OL2843451A"
-                    ],
-                    "author_name": [
-                        "Universal Map"
-                    ],
-                    "publisher_facet": [
-                        "Universal Map Enterprises"
-                    ],
-                    "_version_": 1759801544632434690,
-                    "author_facet": [
-                        "OL2843451A Universal Map"
-                    ]
-                },
-                {
-                    "key": "/works/OL896607W",
-                    "type": "work",
-                    "seed": [
-                        "/books/OL10945157M",
-                        "/works/OL896607W",
-                        "/authors/OL79165A"
-                    ],
-                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
-                    "title_suggest": "Denver west, CO and Bailey, CO: Denver, CO",
-                    "title_sort": "Denver west, CO and Bailey, CO: Denver, CO",
-                    "subtitle": "39105, digital raster graphic data",
-                    "edition_count": 1,
-                    "edition_key": [
-                        "OL10945157M"
-                    ],
-                    "publish_date": [
-                        "1996"
-                    ],
-                    "publish_year": [
-                        1996
-                    ],
-                    "first_publish_year": 1996,
-                    "isbn": [
-                        "0607620056",
-                        "9780607620054"
-                    ],
-                    "last_modified_i": 1272517172,
-                    "ebook_count_i": 0,
-                    "ebook_access": "no_ebook",
-                    "has_fulltext": false,
-                    "public_scan_b": false,
-                    "publisher": [
-                        "USGS Branch of Distribution"
-                    ],
-                    "language": [
-                        "eng"
-                    ],
-                    "author_key": [
-                        "OL79165A"
-                    ],
-                    "author_name": [
-                        "United States Geological Survey"
-                    ],
-                    "author_alternative_name": [
-                        "Geological Survey (U .S.)",
-                        "Geological Survey. (U.S.)",
-                        "Geological Survey (U.S.) 088",
-                        "United States. Geological Survey",
-                        "United States. Geological Survey.",
-                        "U.S. Geological Survey",
-                        "Geological Survey (U.S.)",
-                        "United States. Geological survey.",
-                        "Geological Survey (U. S.)"
-                    ],
-                    "publisher_facet": [
-                        "USGS Branch of Distribution"
-                    ],
-                    "_version_": 1759802487286530049,
-                    "author_facet": [
-                        "OL79165A United States Geological Survey"
-                    ]
-                },
-                {
-                    "key": "/works/OL896605W",
-                    "type": "work",
-                    "seed": [
-                        "/books/OL10945156M",
-                        "/works/OL896605W",
-                        "/authors/OL79165A"
-                    ],
-                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
-                    "title_suggest": "Denver East, CO and Castle Rock, CO: Denver, CO",
-                    "title_sort": "Denver East, CO and Castle Rock, CO: Denver, CO",
-                    "subtitle": "39104, digital raster graphic data",
-                    "edition_count": 1,
-                    "edition_key": [
-                        "OL10945156M"
-                    ],
-                    "publish_date": [
-                        "1996"
-                    ],
-                    "publish_year": [
-                        1996
-                    ],
-                    "first_publish_year": 1996,
-                    "isbn": [
-                        "9780607620047",
-                        "0607620048"
-                    ],
-                    "last_modified_i": 1272517172,
-                    "ebook_count_i": 0,
-                    "ebook_access": "no_ebook",
-                    "has_fulltext": false,
-                    "public_scan_b": false,
-                    "publisher": [
-                        "USGS Branch of Distribution"
-                    ],
-                    "language": [
-                        "eng"
-                    ],
-                    "author_key": [
-                        "OL79165A"
-                    ],
-                    "author_name": [
-                        "United States Geological Survey"
-                    ],
-                    "author_alternative_name": [
-                        "Geological Survey (U .S.)",
-                        "Geological Survey. (U.S.)",
-                        "Geological Survey (U.S.) 088",
-                        "United States. Geological Survey",
-                        "United States. Geological Survey.",
-                        "U.S. Geological Survey",
-                        "Geological Survey (U.S.)",
-                        "United States. Geological survey.",
-                        "Geological Survey (U. S.)"
-                    ],
-                    "publisher_facet": [
-                        "USGS Branch of Distribution"
-                    ],
-                    "_version_": 1759802487500439552,
-                    "author_facet": [
-                        "OL79165A United States Geological Survey"
-                    ]
-                },
-                {
-                    "key": "/works/OL31554740W",
-                    "type": "work",
-                    "seed": [
-                        "/books/OL7772425M",
-                        "/works/OL31554740W"
-                    ],
-                    "title": "Denver Regional, CO",
-                    "title_suggest": "Denver Regional, CO",
-                    "title_sort": "Denver Regional, CO",
-                    "edition_count": 1,
-                    "edition_key": [
-                        "OL7772425M"
-                    ],
-                    "publish_date": [
-                        "June 1994"
-                    ],
-                    "publish_year": [
-                        1994
-                    ],
-                    "first_publish_year": 1994,
-                    "isbn": [
-                        "9780528952715",
-                        "0528952714"
-                    ],
-                    "last_modified_i": 1670927738,
-                    "ebook_count_i": 1,
-                    "ebook_access": "borrowable",
-                    "has_fulltext": true,
-                    "public_scan_b": false,
-                    "ia": [
-                        "denverregionalcl0000pier"
-                    ],
-                    "ia_collection": [
-                        "inlibrary",
-                        "internetarchivebooks",
-                        "printdisabled"
-                    ],
-                    "ia_collection_s": "inlibrary;internetarchivebooks;printdisabled",
-                    "lending_edition_s": "OL7772425M",
-                    "lending_identifier_s": "denverregionalcl0000pier",
-                    "printdisabled_s": "OL7772425M",
-                    "cover_edition_key": "OL7772425M",
-                    "cover_i": 13060547,
-                    "publisher": [
-                        "Rand McNally & Company"
-                    ],
-                    "id_librarything": [
-                        "9032702"
-                    ],
-                    "ia_box_id": [
-                        "IA40452109"
-                    ],
-                    "publisher_facet": [
-                        "Rand McNally & Company"
-                    ],
-                    "_version_": 1759784321817772034
-                },
-                {
-                    "key": "/works/OL8808821W",
-                    "type": "work",
-                    "seed": [
-                        "/books/OL8537031M",
-                        "/works/OL8808821W",
-                        "/authors/OL3010394A"
-                    ],
-                    "title": "University of Denver Co 2007",
-                    "title_suggest": "University of Denver Co 2007",
-                    "title_sort": "University of Denver Co 2007",
-                    "edition_count": 1,
-                    "edition_key": [
-                        "OL8537031M"
-                    ],
-                    "publish_date": [
-                        "July 1, 2006"
-                    ],
-                    "publish_year": [
-                        2006
-                    ],
-                    "first_publish_year": 2006,
-                    "number_of_pages_median": 180,
-                    "oclc": [
-                        "150368610"
-                    ],
-                    "isbn": [
-                        "1427401683",
-                        "9781427401687"
-                    ],
-                    "last_modified_i": 1304171421,
-                    "ebook_count_i": 0,
-                    "ebook_access": "no_ebook",
-                    "has_fulltext": false,
-                    "public_scan_b": false,
-                    "cover_edition_key": "OL8537031M",
-                    "cover_i": 1847337,
-                    "publisher": [
-                        "College Prowler"
-                    ],
-                    "language": [
-                        "eng"
-                    ],
-                    "author_key": [
-                        "OL3010394A"
-                    ],
-                    "author_name": [
-                        "College Prowler"
-                    ],
-                    "id_goodreads": [
-                        "2985742"
-                    ],
-                    "publisher_facet": [
-                        "College Prowler"
-                    ],
-                    "_version_": 1759802390192586752,
-                    "author_facet": [
-                        "OL3010394A College Prowler"
-                    ]
-                }
-            ],
-            "num_found": 758,
-            "q": "denver,co",
-            "offset": null
-        }
-  recorded_at: Tue, 13 Jun 2023 21:27:39 GMT
-- request:
-    method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=MAP_API_KEY&location=denver,co
+    uri: http://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=MAP_API_KEY&to=Pueblo,CO
     body:
       encoding: US-ASCII
       string: ''
@@ -366,41 +19,41 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 13 Jun 2023 21:27:39 GMT
+      - Tue, 13 Jun 2023 21:38:53 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '797'
+      - '10411'
       Connection:
       - keep-alive
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14862'
+      - '14824'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14862'
+      - '14824'
       Ratelimit-Reset:
-      - '484341'
+      - '483667'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 1fb25440-0a31-11ee-9396-cd313a9a1043
+      - b1194550-0a32-11ee-bc6a-294f8be3ff76
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
-      - all=1,geocoding=1
+      - all=3,geocoding=2,directions=1
       Etag:
-      - W/"31d-zftSuFzJHtZuo9xZ/Qg7M7lyAF4"
+      - W/"28ab-Wo4LCsEIWQ1oKRW+woqTmBzuTgg"
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJkZW52ZXIsY28ifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifV19XX0=
-  recorded_at: Tue, 13 Jun 2023 21:27:39 GMT
+        eyJyb3V0ZSI6eyJzZXNzaW9uSWQiOiJBSkVBNXdjQUFLRUFBQUFHQUFBQUVRQUFBSzBBQUFCNDJtTll5OERBeU1UQXdNQ2VrVnFVYXBXY0s4cHBMQTNrTWlpWWJOX0JZWFV5ekhSVGtWTU1pTjRNcEJtd0FKakdkZWY3d0JxZmlld1daREs5UDl2MF8yYlRhQmpOZ0FOOHRKdzEyNUVSeUVobW1jamdaU0RTS2NEaTBXVEE0cWpBSk1ERXlBQ1VBRG1OZ1FWRXNUQUdPQmd3QUFCUDN5SXpLOWJZaHc6Y2FyIiwicmVhbFRpbWUiOjY4ODUsImRpc3RhbmNlIjoxMTEuODY1NSwidGltZSI6NTkzMSwiZm9ybWF0dGVkVGltZSI6IjAxOjM4OjUxIiwiaGFzSGlnaHdheSI6dHJ1ZSwiaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNCcmlkZ2UiOnRydWUsImhhc1NlYXNvbmFsQ2xvc3VyZSI6ZmFsc2UsImhhc1R1bm5lbCI6ZmFsc2UsImhhc0ZlcnJ5IjpmYWxzZSwiaGFzVW5wYXZlZCI6ZmFsc2UsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNDb3VudHJ5Q3Jvc3MiOmZhbHNlLCJsZWdzIjpbeyJpbmRleCI6MCwiaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNIaWdod2F5Ijp0cnVlLCJoYXNCcmlkZ2UiOnRydWUsImhhc1VucGF2ZWQiOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNTZWFzb25hbENsb3N1cmUiOmZhbHNlLCJoYXNGZXJyeSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJkaXN0YW5jZSI6MTExLjg2NTUsInRpbWUiOjY4ODUsImZvcm1hdHRlZFRpbWUiOiIwMTo1NDo0NSIsIm9yaWdJbmRleCI6MCwib3JpZ05hcnJhdGl2ZSI6IiIsImRlc3RJbmRleCI6MCwiZGVzdE5hcnJhdGl2ZSI6IiIsIm1hbmV1dmVycyI6W3siaW5kZXgiOjAsImRpc3RhbmNlIjowLjI2NzgsIm5hcnJhdGl2ZSI6IkhlYWQgdG93YXJkIENoZXJva2VlIFN0IG9uIFcgQ29sZmF4IEF2ZSAoSS03MC1CTCkuIEdvIGZvciAwLjMgbWkuIiwidGltZSI6NzksImRpcmVjdGlvbiI6OCwiZGlyZWN0aW9uTmFtZSI6IkVhc3QiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDE6MTkiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJ0dXJuVHlwZSI6MCwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiSS03MC1CTCIsIlcgQ29sZmF4IEF2ZSJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9TUFQX0FQSV9LRVkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43NDAwMSwtMTA0Ljk5MjAyfG1hcmtlci0xfHwzOS43Mzk5OTAwMDAwMDAwMSwtMTA0Ljk4NzQxOTk5OTk5OTk3fG1hcmtlci0yfHwmY2VudGVyPTM5Ljc0MDAwMDAwMDAwMDAxLC0xMDQuOTg5NzE5OTk5OTk5OTgmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTUmc2Vzc2lvbj1BSkVBNXdjQUFLRUFBQUFHQUFBQUVRQUFBSzBBQUFCNDJtTll5OERBeU1UQXdNQ2VrVnFVYXBXY0s4cHBMQTNrTWlpWWJOX0JZWFV5ekhSVGtWTU1pTjRNcEJtd0FKakdkZWY3d0JxZmlld1daREs5UDl2MF8yYlRhQmpOZ0FOOHRKdzEyNUVSeUVobW1jamdaU0RTS2NEaTBXVEE0cWpBSk1ERXlBQ1VBRG1OZ1FWRXNUQUdPQmd3QUFCUDN5SXpLOWJZaHc6Y2FyIn0seyJpbmRleCI6MSwiZGlzdGFuY2UiOjIuNzAxNywibmFycmF0aXZlIjoiVHVybiByaWdodCBvbnRvIE4gQnJvYWR3YXkuIEdvIGZvciAyLjcgbWkuIiwidGltZSI6NTg0LCJkaXJlY3Rpb24iOjQsImRpcmVjdGlvbk5hbWUiOiJTb3V0aCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowOTo0NCIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzM5OTkwMDAwMDAwMDEsImxuZyI6LTEwNC45ODc0MTk5OTk5OTk5N30sInR1cm5UeXBlIjoyLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJOIEJyb2Fkd2F5IiwiUyBCcm9hZHdheSBTdCJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9TUFQX0FQSV9LRVkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43Mzk5OTAwMDAwMDAwMSwtMTA0Ljk4NzQxOTk5OTk5OTk3fG1hcmtlci0yfHwzOS43MDA4MzAwMDAwMDAwMSwtMTA0Ljk4NzUzMDAwMDAwMDAyfG1hcmtlci0zfHwmY2VudGVyPTM5LjcyMDQxMDAwMDAwMDAxNSwtMTA0Ljk4NzQ3NDk5OTk5OTk5JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTExJnNlc3Npb249QUpFQTV3Y0FBS0VBQUFBR0FBQUFFUUFBQUswQUFBQjQybU5ZeThEQXlNVEF3TUNla1ZxVWFwV2NLOHBwTEEza01paVliTl9CWVhVeXpIUlRrVk1NaU40TXBCbXdBSmpHZGVmN3dCcWZpZXdXWkRLOVA5djBfMmJUYUJqTmdBTjh0SncxMjVFUnlFaG1tY2pnWlNEU0tjRGkwV1RBNHFqQUpNREV5QUNVQURtTmdRVkVzVEFHT0Jnd0FBQlAzeUl6SzliWWh3OmNhciJ9LHsiaW5kZXgiOjIsImRpc3RhbmNlIjowLjMyNDQsIm5hcnJhdGl2ZSI6IlR1cm4gbGVmdCB0b3dhcmQgSS0yNSBTLiBHbyBmb3IgMC4zIG1pLiIsInRpbWUiOjM1LCJkaXJlY3Rpb24iOjUsImRpcmVjdGlvbk5hbWUiOiJTb3V0aGVhc3QiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MzUiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM5LjcwMDgzMDAwMDAwMDAxLCJsbmciOi0xMDQuOTg3NTMwMDAwMDAwMDJ9LCJ0dXJuVHlwZSI6NiwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOltdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9TUFQX0FQSV9LRVkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43MDA4MzAwMDAwMDAwMSwtMTA0Ljk4NzUzMDAwMDAwMDAyfG1hcmtlci0zfHwzOS42OTc0Mzk5OTk5OTk5OSwtMTA0Ljk4MzMyOTk5OTk5OTk4fG1hcmtlci00fHwmY2VudGVyPTM5LjY5OTEzNSwtMTA0Ljk4NTQzMDAwMDAwMDAxJmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTE0JnNlc3Npb249QUpFQTV3Y0FBS0VBQUFBR0FBQUFFUUFBQUswQUFBQjQybU5ZeThEQXlNVEF3TUNla1ZxVWFwV2NLOHBwTEEza01paVliTl9CWVhVeXpIUlRrVk1NaU40TXBCbXdBSmpHZGVmN3dCcWZpZXdXWkRLOVA5djBfMmJUYUJqTmdBTjh0SncxMjVFUnlFaG1tY2pnWlNEU0tjRGkwV1RBNHFqQUpNREV5QUNVQURtTmdRVkVzVEFHT0Jnd0FBQlAzeUl6SzliWWh3OmNhciJ9LHsiaW5kZXgiOjMsImRpc3RhbmNlIjowLjA0MSwibmFycmF0aXZlIjoiQ29udGludWUgb24gUyBWYWxsZXkgSHd5LiBHbyBmb3IgMjE3IGZ0LiIsInRpbWUiOjMsImRpcmVjdGlvbiI6NSwiZGlyZWN0aW9uTmFtZSI6IlNvdXRoZWFzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDowMyIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNjk3NDM5OTk5OTk5OTksImxuZyI6LTEwNC45ODMzMjk5OTk5OTk5OH0sInR1cm5UeXBlIjowLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJTIFZhbGxleSBId3kiXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUF9BUElfS0VZJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNjk3NDM5OTk5OTk5OTksLTEwNC45ODMzMjk5OTk5OTk5OHxtYXJrZXItNHx8MzkuNjk3MDA5OTk5OTk5OTksLTEwNC45ODI3OTk5OTk5OTk5OHxtYXJrZXItNXx8JmNlbnRlcj0zOS42OTcyMjQ5OTk5OTk5OSwtMTA0Ljk4MzA2NDk5OTk5OTk4JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTE2JnNlc3Npb249QUpFQTV3Y0FBS0VBQUFBR0FBQUFFUUFBQUswQUFBQjQybU5ZeThEQXlNVEF3TUNla1ZxVWFwV2NLOHBwTEEza01paVliTl9CWVhVeXpIUlRrVk1NaU40TXBCbXdBSmpHZGVmN3dCcWZpZXdXWkRLOVA5djBfMmJUYUJqTmdBTjh0SncxMjVFUnlFaG1tY2pnWlNEU0tjRGkwV1RBNHFqQUpNREV5QUNVQURtTmdRVkVzVEFHT0Jnd0FBQlAzeUl6SzliWWh3OmNhciJ9LHsiaW5kZXgiOjQsImRpc3RhbmNlIjoxMDcuODA5OCwibmFycmF0aXZlIjoiVGFrZSBsZWZ0IHJhbXAgb250byBJLTI1IFMuIEdvIGZvciAxMDggbWkuIiwidGltZSI6NjAzMiwiZGlyZWN0aW9uIjo0LCJkaXJlY3Rpb25OYW1lIjoiU291dGgiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDE6NDA6MzIiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM5LjY5NzAwOTk5OTk5OTk5LCJsbmciOi0xMDQuOTgyNzk5OTk5OTk5OTh9LCJ0dXJuVHlwZSI6MTMsImF0dHJpYnV0ZXMiOjAsImljb25VcmwiOiIiLCJzdHJlZXRzIjpbIkktMjUiXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUF9BUElfS0VZJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNjk3MDA5OTk5OTk5OTksLTEwNC45ODI3OTk5OTk5OTk5OHxtYXJrZXItNXx8MzguMjcwNjQwMDAwMDAwMjcsLTEwNC42MDUyMzk5OTk5OTk4NHxtYXJrZXItNnx8JmNlbnRlcj0zOC45ODM4MjUwMDAwMDAxMywtMTA0Ljc5NDAxOTk5OTk5OTkmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209NiZzZXNzaW9uPUFKRUE1d2NBQUtFQUFBQUdBQUFBRVFBQUFLMEFBQUI0Mm1OWXk4REF5TVRBd01DZWtWcVVhcFdjSzhwcExBM2tNaWlZYk5fQllYVXl6SFJUa1ZNTWlONE1wQm13QUpqR2RlZjd3QnFmaWV3V1pESzlQOXYwXzJiVGFCak5nQU44dEp3MTI1RVJ5RWhtbWNqZ1pTRFNLY0RpMFdUQTRxakFKTURFeUFDVUFEbU5nUVZFc1RBR09CZ3dBQUJQM3lJeks5YllodzpjYXIifSx7ImluZGV4Ijo1LCJkaXN0YW5jZSI6MC4xOTA4LCJuYXJyYXRpdmUiOiJUYWtlIGV4aXQgOThCIHRvd2FyZCBDaXR5IENlbnRlciBEcml2ZS4gR28gZm9yIDAuMiBtaS4iLCJ0aW1lIjoyOCwiZGlyZWN0aW9uIjo0LCJkaXJlY3Rpb25OYW1lIjoiU291dGgiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MjgiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM4LjI3MDY0MDAwMDAwMDI3LCJsbmciOi0xMDQuNjA1MjM5OTk5OTk5ODR9LCJ0dXJuVHlwZSI6MTQsImF0dHJpYnV0ZXMiOjAsImljb25VcmwiOiIiLCJzdHJlZXRzIjpbXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUF9BUElfS0VZJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzguMjcwNjQwMDAwMDAwMjcsLTEwNC42MDUyMzk5OTk5OTk4NHxtYXJrZXItNnx8MzguMjY3OTMwMDAwMDAwMjU2LC0xMDQuNjA1NjE5OTk5OTk5ODZ8bWFya2VyLTd8fCZjZW50ZXI9MzguMjY5Mjg1MDAwMDAwMjcsLTEwNC42MDU0Mjk5OTk5OTk4NCZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZzZXNzaW9uPUFKRUE1d2NBQUtFQUFBQUdBQUFBRVFBQUFLMEFBQUI0Mm1OWXk4REF5TVRBd01DZWtWcVVhcFdjSzhwcExBM2tNaWlZYk5fQllYVXl6SFJUa1ZNTWlONE1wQm13QUpqR2RlZjd3QnFmaWV3V1pESzlQOXYwXzJiVGFCak5nQU44dEp3MTI1RVJ5RWhtbWNqZ1pTRFNLY0RpMFdUQTRxakFKTURFeUFDVUFEbU5nUVZFc1RBR09CZ3dBQUJQM3lJeks5YllodzpjYXIifSx7ImluZGV4Ijo2LCJkaXN0YW5jZSI6MC4xNTc4LCJuYXJyYXRpdmUiOiJUdXJuIHJpZ2h0IG9udG8gRSAxc3QgU3QuIEdvIGZvciAwLjIgbWkuIiwidGltZSI6NDksImRpcmVjdGlvbiI6NywiZGlyZWN0aW9uTmFtZSI6Ildlc3QiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6NDkiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM4LjI2NzkzMDAwMDAwMDI1NiwibG5nIjotMTA0LjYwNTYxOTk5OTk5OTg2fSwidHVyblR5cGUiOjIsImF0dHJpYnV0ZXMiOjAsImljb25VcmwiOiIiLCJzdHJlZXRzIjpbIkUgMXN0IFN0IiwiVyBDaXR5IENlbnRlciBEciJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9TUFQX0FQSV9LRVkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOC4yNjc5MzAwMDAwMDAyNTYsLTEwNC42MDU2MTk5OTk5OTk4NnxtYXJrZXItN3x8MzguMjY3OTAwMDAwMDAwMjQ2LC0xMDQuNjA4NTE5OTk5OTk5ODZ8bWFya2VyLTh8fCZjZW50ZXI9MzguMjY3OTE1MDAwMDAwMjUsLTEwNC42MDcwNjk5OTk5OTk4NSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZzZXNzaW9uPUFKRUE1d2NBQUtFQUFBQUdBQUFBRVFBQUFLMEFBQUI0Mm1OWXk4REF5TVRBd01DZWtWcVVhcFdjSzhwcExBM2tNaWlZYk5fQllYVXl6SFJUa1ZNTWlONE1wQm13QUpqR2RlZjd3QnFmaWV3V1pESzlQOXYwXzJiVGFCak5nQU44dEp3MTI1RVJ5RWhtbWNqZ1pTRFNLY0RpMFdUQTRxakFKTURFeUFDVUFEbU5nUVZFc1RBR09CZ3dBQUJQM3lJeks5YllodzpjYXIifSx7ImluZGV4Ijo3LCJkaXN0YW5jZSI6MC4yMTEzLCJuYXJyYXRpdmUiOiJUdXJuIGxlZnQgb250byBDZW50cmFsIE1haW4gU3QuIEdvIGZvciAwLjIgbWkuIiwidGltZSI6NDYsImRpcmVjdGlvbiI6NiwiZGlyZWN0aW9uTmFtZSI6IlNvdXRod2VzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDo0NiIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzguMjY3OTAwMDAwMDAwMjQ2LCJsbmciOi0xMDQuNjA4NTE5OTk5OTk5ODZ9LCJ0dXJuVHlwZSI6NiwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiQ2VudHJhbCBNYWluIFN0Il0sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1NQVBfQVBJX0tFWSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM4LjI2NzkwMDAwMDAwMDI0NiwtMTA0LjYwODUxOTk5OTk5OTg2fG1hcmtlci04fHwzOC4yNjU0MjAwMDAwMDAyNSwtMTA0LjYxMDQ1OTk5OTk5OTg5fG1hcmtlci05fHwmY2VudGVyPTM4LjI2NjY2MDAwMDAwMDI0LC0xMDQuNjA5NDg5OTk5OTk5ODgmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTUmc2Vzc2lvbj1BSkVBNXdjQUFLRUFBQUFHQUFBQUVRQUFBSzBBQUFCNDJtTll5OERBeU1UQXdNQ2VrVnFVYXBXY0s4cHBMQTNrTWlpWWJOX0JZWFV5ekhSVGtWTU1pTjRNcEJtd0FKakdkZWY3d0JxZmlld1daREs5UDl2MF8yYlRhQmpOZ0FOOHRKdzEyNUVSeUVobW1jamdaU0RTS2NEaTBXVEE0cWpBSk1ERXlBQ1VBRG1OZ1FWRXNUQUdPQmd3QUFCUDN5SXpLOWJZaHc6Y2FyIn0seyJpbmRleCI6OCwiZGlzdGFuY2UiOjAuMTYwOSwibmFycmF0aXZlIjoiQ29udGludWUgb24gUyBNYWluIFN0LiBHbyBmb3IgMC4yIG1pLiIsInRpbWUiOjI5LCJkaXJlY3Rpb24iOjYsImRpcmVjdGlvbk5hbWUiOiJTb3V0aHdlc3QiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MjkiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM4LjI2NTQyMDAwMDAwMDI1LCJsbmciOi0xMDQuNjEwNDU5OTk5OTk5ODl9LCJ0dXJuVHlwZSI6MCwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiUyBNYWluIFN0Il0sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1NQVBfQVBJX0tFWSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM4LjI2NTQyMDAwMDAwMDI1LC0xMDQuNjEwNDU5OTk5OTk5ODl8bWFya2VyLTl8fDM4LjI2Mzc1MDAwMDAwMDI0LC0xMDQuNjEyNTE5OTk5OTk5OTJ8bWFya2VyLTEwfHwmY2VudGVyPTM4LjI2NDU4NTAwMDAwMDI0NSwtMTA0LjYxMTQ4OTk5OTk5OTkmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTUmc2Vzc2lvbj1BSkVBNXdjQUFLRUFBQUFHQUFBQUVRQUFBSzBBQUFCNDJtTll5OERBeU1UQXdNQ2VrVnFVYXBXY0s4cHBMQTNrTWlpWWJOX0JZWFV5ekhSVGtWTU1pTjRNcEJtd0FKakdkZWY3d0JxZmlld1daREs5UDl2MF8yYlRhQmpOZ0FOOHRKdzEyNUVSeUVobW1jamdaU0RTS2NEaTBXVEE0cWpBSk1ERXlBQ1VBRG1OZ1FWRXNUQUdPQmd3QUFCUDN5SXpLOWJZaHc6Y2FyIn0seyJpbmRleCI6OSwiZGlzdGFuY2UiOjAsIm5hcnJhdGl2ZSI6IkFycml2ZSBhdCBTIE1haW4gU3QuIiwidGltZSI6MCwiZGlyZWN0aW9uIjowLCJkaXJlY3Rpb25OYW1lIjoiTm9uZSIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDowMCIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzguMjYzNzUwMDAwMDAwMjQsImxuZyI6LTEwNC42MTI1MTk5OTk5OTk5Mn0sInR1cm5UeXBlIjowLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6W119XX1dLCJvcHRpb25zIjp7InJvdXRlVHlwZSI6IkZBU1RFU1QiLCJuYXJyYXRpdmVUeXBlIjoidGV4dCIsImVuaGFuY2VkTmFycmF0aXZlIjpmYWxzZSwid2Fsa2luZ1NwZWVkIjotMSwiaGlnaHdheUVmZmljaWVuY3kiOjIyLCJhdm9pZHMiOmZhbHNlLCJnZW5lcmFsaXplIjotMSwic2hhcGVGb3JtYXQiOiJyYXciLCJ1bml0IjoiTSIsImxvY2FsZSI6ImVuX1VTIiwidXNlVHJhZmZpYyI6ZmFsc2UsInRpbWVUeXBlIjowLCJkYXRlVHlwZSI6MCwiZG9SZXZlcnNlR2VvY29kZSI6dHJ1ZSwibWFuTWFwcyI6dHJ1ZSwic2lkZU9mU3RyZWV0RGlzcGxheSI6dHJ1ZX0sImJvdW5kaW5nQm94Ijp7InVsIjp7ImxhdCI6MzkuNzQwNTIwMDAwMDAwMDEsImxuZyI6LTEwNC45OTIwMn0sImxyIjp7ImxhdCI6MzguMjYzNzUwMDAwMDAwMjQsImxuZyI6LTEwNC42MDQwMDk5OTk5OTk4M319LCJuYW1lIjoiSS0yNSIsIm1heFJvdXRlcyI6IiIsImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkRlbnZlciIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJEZW52ZXIiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJDTyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzkuNzQwMDEsImxuZyI6LTEwNC45OTIwMn0sImRpc3BsYXlMYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiUHVlYmxvIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IlB1ZWJsbyIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOC4yNjM3NSwibG5nIjotMTA0LjYxMjUyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM4LjI2Mzc1LCJsbmciOi0xMDQuNjEyNTJ9LCJtYXBVcmwiOiIifV0sImxvY2F0aW9uU2VxdWVuY2UiOlswLDFdfSwiaW5mbyI6eyJzdGF0dXNjb2RlIjowLCJjb3B5cmlnaHQiOnsidGV4dCI6IsKpIDIwMjIgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwiaW1hZ2VBbHRUZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiJ9LCJtZXNzYWdlcyI6W119fQ==
+  recorded_at: Tue, 13 Jun 2023 21:38:53 GMT
 - request:
     method: get
-    uri: https://api.weatherapi.com/v1/forecast.json?days=5&key=WEATHER_API_KEY&q=39.74001,-104.99202
+    uri: https://api.weatherapi.com/v1/forecast.json?days=5&key=WEATHER_API_KEY&q=39.738453,-104.984853
     body:
       encoding: US-ASCII
       string: ''
@@ -417,7 +70,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 13 Jun 2023 21:27:40 GMT
+      - Tue, 13 Jun 2023 21:38:54 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -427,7 +80,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1029
+      - BunnyCDN-IL1-1067
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -443,21 +96,22 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 06/13/2023 21:27:40
+      - 06/13/2023 21:38:54
       Cdn-Edgestorageid:
-      - '941'
+      - '1068'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 64190d598a6850def0f818035f8de1df
+      - fc6126f9b8b91d0f96e28439d5d16ccb
       Cdn-Cache:
-      - MISS
+      - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Denver","region":"Colorado","country":"United
-        States of America","lat":39.74,"lon":-104.99,"tz_id":"America/Denver","localtime_epoch":1686691660,"localtime":"2023-06-13
-        15:27"},"current":{"last_updated_epoch":1686690900,"last_updated":"2023-06-13
-        15:15","temp_c":11.3,"temp_f":52.3,"is_day":1,"condition":{"text":"Light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/296.png","code":1183},"wind_mph":9.4,"wind_kph":15.1,"wind_degree":300,"wind_dir":"WNW","pressure_mb":1017.0,"pressure_in":30.04,"precip_mm":0.1,"precip_in":0.0,"humidity":90,"cloud":100,"feelslike_c":10.0,"feelslike_f":50.0,"vis_km":11.0,"vis_miles":6.0,"uv":4.0,"gust_mph":8.1,"gust_kph":13.0},"forecast":{"forecastday":[{"date":"2023-06-13","date_epoch":1686614400,"day":{"maxtemp_c":17.7,"maxtemp_f":63.9,"mintemp_c":10.9,"mintemp_f":51.6,"avgtemp_c":14.5,"avgtemp_f":58.0,"maxwind_mph":8.1,"maxwind_kph":13.0,"totalprecip_mm":2.5,"totalprecip_in":0.1,"totalsnow_cm":0.0,"avgvis_km":9.8,"avgvis_miles":6.0,"avghumidity":67.0,"daily_will_it_rain":1,"daily_chance_of_rain":86,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Patchy
+        States of America","lat":39.74,"lon":-104.98,"tz_id":"America/Denver","localtime_epoch":1686692334,"localtime":"2023-06-13
+        15:38"},"current":{"last_updated_epoch":1686691800,"last_updated":"2023-06-13
+        15:30","temp_c":12.4,"temp_f":54.3,"is_day":1,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1017.0,"pressure_in":30.02,"precip_mm":0.1,"precip_in":0.0,"humidity":84,"cloud":75,"feelslike_c":11.3,"feelslike_f":52.4,"vis_km":16.0,"vis_miles":9.0,"uv":4.0,"gust_mph":8.1,"gust_kph":13.0},"forecast":{"forecastday":[{"date":"2023-06-13","date_epoch":1686614400,"day":{"maxtemp_c":17.7,"maxtemp_f":63.9,"mintemp_c":10.9,"mintemp_f":51.6,"avgtemp_c":14.5,"avgtemp_f":58.0,"maxwind_mph":8.1,"maxwind_kph":13.0,"totalprecip_mm":2.5,"totalprecip_in":0.1,"totalsnow_cm":0.0,"avgvis_km":9.8,"avgvis_miles":6.0,"avghumidity":67.0,"daily_will_it_rain":1,"daily_chance_of_rain":86,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Patchy
         rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png","code":1063},"uv":3.0},"astro":{"sunrise":"05:32
         AM","sunset":"08:29 PM","moonrise":"02:37 AM","moonset":"04:12 PM","moon_phase":"Waning
         Crescent","moon_illumination":"27","is_moon_up":0,"is_sun_up":1},"hour":[{"time_epoch":1686636000,"time":"2023-06-13
@@ -655,5 +309,5 @@ http_interactions:
         21:00","temp_c":20.4,"temp_f":68.7,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":7.4,"wind_kph":11.9,"wind_degree":335,"wind_dir":"NNW","pressure_mb":1007.0,"pressure_in":29.73,"precip_mm":0.0,"precip_in":0.0,"humidity":30,"cloud":11,"feelslike_c":20.4,"feelslike_f":68.7,"windchill_c":20.4,"windchill_f":68.7,"heatindex_c":20.4,"heatindex_f":68.7,"dewpoint_c":2.2,"dewpoint_f":36.0,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":13.9,"gust_kph":22.3,"uv":1.0},{"time_epoch":1687060800,"time":"2023-06-17
         22:00","temp_c":19.6,"temp_f":67.3,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":5.4,"wind_kph":8.6,"wind_degree":291,"wind_dir":"WNW","pressure_mb":1008.0,"pressure_in":29.75,"precip_mm":0.0,"precip_in":0.0,"humidity":35,"cloud":11,"feelslike_c":19.6,"feelslike_f":67.3,"windchill_c":19.6,"windchill_f":67.3,"heatindex_c":19.6,"heatindex_f":67.3,"dewpoint_c":3.7,"dewpoint_f":38.7,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":10.7,"gust_kph":17.3,"uv":1.0},{"time_epoch":1687064400,"time":"2023-06-17
         23:00","temp_c":18.8,"temp_f":65.8,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":4.9,"wind_kph":7.9,"wind_degree":227,"wind_dir":"SW","pressure_mb":1008.0,"pressure_in":29.75,"precip_mm":0.0,"precip_in":0.0,"humidity":40,"cloud":9,"feelslike_c":18.8,"feelslike_f":65.8,"windchill_c":18.8,"windchill_f":65.8,"heatindex_c":18.8,"heatindex_f":65.8,"dewpoint_c":4.9,"dewpoint_f":40.8,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":10.1,"gust_kph":16.2,"uv":1.0}]}]}}'
-  recorded_at: Tue, 13 Jun 2023 21:27:40 GMT
+  recorded_at: Tue, 13 Jun 2023 21:38:54 GMT
 recorded_with: VCR 6.1.0

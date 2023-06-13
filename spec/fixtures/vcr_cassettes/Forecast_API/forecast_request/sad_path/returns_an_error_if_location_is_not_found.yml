@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 12 Jun 2023 00:28:50 GMT
+      - Tue, 13 Jun 2023 21:27:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,17 +29,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14967'
+      - '14860'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14967'
+      - '14860'
       Ratelimit-Reset:
-      - '646270'
+      - '484339'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 1a8f55f0-08b8-11ee-bb52-038371c48330
+      - 21084750-0a31-11ee-9396-cd313a9a1043
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -48,7 +48,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjQwMCwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjIgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiSWxsZWdhbCBhcmd1bWVudCBmcm9tIHJlcXVlc3Q6IEluc3VmZmljaWVudCBpbmZvIGZvciBsb2NhdGlvbiJdfSwib3B0aW9ucyI6eyJtYXhSZXN1bHRzIjotMSwiaWdub3JlTGF0TG5nSW5wdXQiOmZhbHNlfSwicmVzdWx0cyI6W3sicHJvdmlkZWRMb2NhdGlvbiI6e30sImxvY2F0aW9ucyI6W119XX0=
-  recorded_at: Mon, 12 Jun 2023 00:28:50 GMT
+  recorded_at: Tue, 13 Jun 2023 21:27:41 GMT
 - request:
     method: get
     uri: http://www.mapquestapi.com/geocoding/v1/address?key=MAP_API_KEY&location=
@@ -68,7 +68,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 12 Jun 2023 00:28:50 GMT
+      - Tue, 13 Jun 2023 21:27:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -78,17 +78,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14964'
+      - '14861'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14964'
+      - '14861'
       Ratelimit-Reset:
-      - '646270'
+      - '484338'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 1aa37a30-08b8-11ee-ae95-b587ca6a70ef
+      - 211b3310-0a31-11ee-ae95-b587ca6a70ef
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -97,5 +97,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjQwMCwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjIgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiSWxsZWdhbCBhcmd1bWVudCBmcm9tIHJlcXVlc3Q6IEluc3VmZmljaWVudCBpbmZvIGZvciBsb2NhdGlvbiJdfSwib3B0aW9ucyI6eyJtYXhSZXN1bHRzIjotMSwiaWdub3JlTGF0TG5nSW5wdXQiOmZhbHNlfSwicmVzdWx0cyI6W3sicHJvdmlkZWRMb2NhdGlvbiI6e30sImxvY2F0aW9ucyI6W119XX0=
-  recorded_at: Mon, 12 Jun 2023 00:28:50 GMT
+  recorded_at: Tue, 13 Jun 2023 21:27:41 GMT
 recorded_with: VCR 6.1.0

@@ -37,13 +37,15 @@ class Forecast
   end
 
   def hourly
-    @data[:forecast][:forecastday][0][:hour].map do |hour|
-      {
-        time: hour[:time],
-        temperature: hour[:temp_f],
-        conditions: hour[:condition][:text],
-        icon: hour[:condition][:icon]
-      }
+    @data[:forecast][:forecastday].flat_map do |day|
+      day[:hour].map do |hour|
+        {
+          time: hour[:time],
+          temperature: hour[:temp_f],
+          conditions: hour[:condition][:text],
+          icon: hour[:condition][:icon]
+        }
+      end
     end
   end
 end
