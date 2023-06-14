@@ -513,7 +513,7 @@ Distributed under the MIT License.
 
 ### Contact
 
-Isaac Thill - [![LinkedIn][linkedin-shield](https://www.linkedin.com/in/isaac-thill/)
+Isaac Thill - [LinkedIn](https://www.linkedin.com/in/isaac-thill/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
