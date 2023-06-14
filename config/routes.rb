@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
       resources :sessions, only: [:create]
       resources :road_trip, only: [:create]
+      resources :backgrounds, only: [:index]
       get 'book-search', to: 'book_search#index', as: 'book_search'
     end
   end
