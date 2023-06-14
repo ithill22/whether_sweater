@@ -4,7 +4,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -529,8 +528,6 @@ Isaac Thill - [![LinkedIn][linkedin-shield](https://www.linkedin.com/in/isaac-th
 [stars-url]: https://github.com/ithill22/whether_sweater/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ithill22/whether_sweater.svg?style=for-the-badge
 [issues-url]: https://github.com/ithill22/whether_sweater/issues
-[license-shield]: https://img.shields.io/github/license/ithill22/whether_sweater.svg?style=for-the-badge
-[license-url]: https://github.com/ithill22/whether_sweater/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/isaac-thill/
 [Pry-img]: https://img.shields.io/badge/pry-b81818.svg?&style=flaste&logo=rubygems&logoColor=white
